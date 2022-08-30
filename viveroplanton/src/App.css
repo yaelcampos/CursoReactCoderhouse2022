@@ -3,7 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 50%;
+  height: 150%;
+  padding: 4%;
   pointer-events: none;
 }
 
@@ -14,8 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +24,50 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-contenedor {
+  background-color: #108965;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
 }
+
+.navbar-imagen-contenedor {
+  width: 20%;
+  display: flex;
+}
+
+.navbar-navegador-link {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  border: 3px solid rgb(12, 120, 37);
+  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+  padding: 3%;
+  height: 40%;
+  color:#fff;
+}
+
+.nav-contenedor {
+    color: #fff;
+    background-color: rgb(16, 184, 128);
+    text-decoration: none;
+    border: 3px solid rgb(12, 120, 37);
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    padding: 5%;
+    height: 0%;
+}
+
+.navbar-navegador-contenedor {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
