@@ -1,6 +1,8 @@
-import logo from './plantago.png';
+
 import './App.css';
-import NavBar from './componentes/NavBar';
+import NavBar from './componentes/NavBar/NavBar'; 
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <header className="App-header">
         <NavBar/>
       </header>
+        <ItemListContainer greeting="Bienvenido a tu vivero favorito"/>
     </div>
   );
 }
