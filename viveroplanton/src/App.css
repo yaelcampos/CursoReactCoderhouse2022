@@ -67,6 +67,11 @@
   justify-content: space-around;
 }
 
+.divContainerCounterButton {
+  display: flex;
+  justify-content: center;
+}
+
 
 
 @keyframes App-logo-spin {

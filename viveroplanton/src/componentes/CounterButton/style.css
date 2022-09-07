@@ -1,0 +1,15 @@
+.DivContenedorBotones {
+    display: flex;
+    width: 33%;
+    height: 15%;
+    border: 2px solid grey;
+    padding: 4%;
+}
+
+.DivContenedorBotones > button {
+    background-color: #0461ba;
+    color: #fff;
+    width: 27%;
+    padding: 2%;
+    margin: 3%;
+}
