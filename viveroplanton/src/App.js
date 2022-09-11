@@ -12,11 +12,11 @@ function App() {
         <NavBar/>
       </header>
       <div>
-        <ItemListContainer greeting="Bienvenido a tu vivero favorito"/>
+        <ItemListContainer/>
       </div>
-      <div className='divContainerCounterButton'>
-        <CounterButton stock = {stock}/>
-      </div>
+      <div>
+        <CounterButton stock = {stock}/> 
+        </div>
     </div>
   );
 }

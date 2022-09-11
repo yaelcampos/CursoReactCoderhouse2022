@@ -2,14 +2,16 @@
     display: flex;
     width: 33%;
     height: 15%;
-    border: 2px solid grey;
-    padding: 4%;
 }
 
 .DivContenedorBotones > button {
-    background-color: #0461ba;
+    background-color: #00a965;
     color: #fff;
-    width: 27%;
-    padding: 2%;
+    width: 18%;
+    padding: 1%;
     margin: 3%;
+}
+
+.DivContenedorBotones > h3 {
+    font-size: 1rem;
 }

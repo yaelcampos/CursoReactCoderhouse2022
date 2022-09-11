@@ -1,8 +1,33 @@
+import { useEffect, useState } from "react";
+import productos from "../mockData";
+import ItemList from "../ItemList/ItemList";
+
 
 const ItemListContainer = ({greeting}) => {
+    const [productList, setProductList] = useState([])
+
+    useEffect(() => {
+        getProducts.then((response) => {
+            setProductList(response);
+        });
+
+    }, []);
+    
+
+    const getProducts = new Promise((resolve, reject) => {
+            setTimeout(()=> {
+                resolve(productos)
+            },2000)
+        })
+    
+
+
     return (
-        <h1>{greeting}</h1>
-    )
+        <>
+            <ItemList lista={productList}/>
+        </>
+
+    );
 }
 
 export default ItemListContainer

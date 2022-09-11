@@ -12,8 +12,8 @@ const Counter = (props) => {
 
 return (
     <>
-        <div class="DivContenedorBotones">
-            <h3>Tengo {items} items. </h3>
+        <div className="DivContenedorBotones">
+            <h3>Tengo {items} producto </h3>
             <button onClick={restar}>Restar</button>
             <button onClick={sumar}>Suma</button>
 
