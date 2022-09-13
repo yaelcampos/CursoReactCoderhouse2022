@@ -14,9 +14,10 @@ return (
     <>
         <div className="DivContenedorBotones">
             <h3>Tengo {items} producto </h3>
-            <button onClick={restar}>Restar</button>
-            <button onClick={sumar}>Suma</button>
-
+            <div className="ContenedorBotones">
+                <button onClick={restar}>Restar</button>
+                <button onClick={sumar}>Suma</button>
+            </div>
         </div>
     </>
 )

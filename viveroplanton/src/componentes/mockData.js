@@ -3,12 +3,14 @@ const productos = [
     id: '1',
     title: 'Flor de poeta',
     price: 300,
+    stock: 5,
     image: 'https://www.flordeplanta.com.ar/wp-content/uploads/2015/09/Thunbergia-alata.jpg',
 },
 {
     id: '2',
     title: 'Flor de poeta',
     price: 1500,
+    stock: 10,
     image: 'https://www.flordeplanta.com.ar/wp-content/uploads/2015/09/Thunbergia-alata.jpg',
 },
 {

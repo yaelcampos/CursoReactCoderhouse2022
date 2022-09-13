@@ -14,7 +14,7 @@ function App() {
       </header>
       <div>
         <ItemListContainer/>
-        <CounterButton stock = {stock}/> 
+        
       </div>
     </div>
   );
