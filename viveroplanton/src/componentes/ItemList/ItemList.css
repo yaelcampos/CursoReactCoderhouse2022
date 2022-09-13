@@ -1,0 +1,5 @@
+.divContenedorCardProductos {
+    display: flex;
+    justify-content: center;
+    background-color: #91B967;
+}

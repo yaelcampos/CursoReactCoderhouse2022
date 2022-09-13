@@ -1,10 +1,12 @@
 import Item from "../Item/Item";
-import productos from "../mockData";
+import './ItemList.css';
+
+
 
 const ItemList = ({ lista }) => {
-console.log(lista)
+
     return (
-        <div >
+        <div className="divContenedorCardProductos">
             {
                 lista.map((product) => (  
                     <Item 

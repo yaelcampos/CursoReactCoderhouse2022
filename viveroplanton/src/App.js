@@ -4,6 +4,7 @@ import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import CounterButton from './componentes/CounterButton/CounterButton';
 
+
 function App() {
   const stock = 10;
   return (
@@ -13,10 +14,8 @@ function App() {
       </header>
       <div>
         <ItemListContainer/>
-      </div>
-      <div>
         <CounterButton stock = {stock}/> 
-        </div>
+      </div>
     </div>
   );
 }

@@ -16,7 +16,8 @@ const ItemListContainer = ({greeting}) => {
 
     const getProducts = new Promise((resolve, reject) => {
             setTimeout(()=> {
-                resolve(productos)
+                resolve(productos.filter(( productos ) =>
+                productos.id === "2"))
             },2000)
         })
     
