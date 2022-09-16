@@ -1,20 +1,24 @@
 import Item from "../Item/Item";
 import './ItemList.css';
-
-
+import { Link } from 'react-router-dom'
 
 const ItemList = ({ lista }) => {
+    console.log(lista)
 
     return (
         <div className="divContenedorCardProductos">
             {
-                lista.map((product) => (  
-                    <Item 
-                    image={product.image} 
-                    title={product.title}
-                    price={product.price} 
-                    key={product.id}
-                    />
+                lista.map((product) => ( 
+                    <Link key={product.id}
+                    to={'/detail/'+product.id} style={{ textDecoration: 'none'}}
+                    >
+                        <Item 
+                        image={product.image} 
+                        title={product.title}
+                        price={product.price} 
+                        key={product.id}
+                        />
+                    </Link> 
             ))}
         </div>
     );
