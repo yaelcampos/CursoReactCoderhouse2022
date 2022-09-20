@@ -1,5 +1,5 @@
 import logo from '../../plantago.png';
-import tulipan from '../../tulipan.jpg';
+import hojasMojadas from '../../hojas_mojadas.jpeg';
 import './NavBar.style.css';
 import Servicios from '../Servicios/Servicios';
 import CartWidget from '../CartWidget/CartWidget';
@@ -9,29 +9,27 @@ const NavBar = () => {
     return (
         <nav>
             <div>
-                <img className="imageTulipanes" src={tulipan} alt="logo" />
+                <img className="imageHojas" src={hojasMojadas} alt="logo" />
             </div>
             <div className="navbar-contenedor">
                 <div className="navbar-imagen-contenedor">
                     <img className="App-logo" src={logo} alt="logo" />
                 </div>
                 <div className="navbar-navegador-link">
-                    <Link to={'/'}> 
+                    <Link className="nav-link" to={'/'}> 
                         Inicio
                     </Link>
-                    <a className="nav-link" href="#">Tienda</a>
-                    <Link to={'/servicios'}> 
-                        Servicios
-                    </Link>
-                    <Link to={'/categoria/1'}> 
+                    <Link className="nav-link"  to={'/categoria/1'}>     
                         Plantas
                     </Link>
-                    <Link to={'/categoria/2'}> 
+                    <Link className="nav-link"  to={'/categoria/2'}> 
                         Arboles
+                    </Link>
+                    <Link  className="nav-link"  to={'/Servicios'}> 
+                        Servicios
                     </Link>
                 </div>
                 <div className="navbar-navegador-contenedor">
-                    <button className="nav-contenedor">Registrarse</button>
                     <button className="nav-contenedor">Contactos</button>
                     <CartWidget/>
                 </div>

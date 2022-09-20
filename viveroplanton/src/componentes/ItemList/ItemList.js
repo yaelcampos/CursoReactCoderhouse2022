@@ -3,8 +3,6 @@ import './ItemList.css';
 import { Link } from 'react-router-dom'
 
 const ItemList = ({ lista }) => {
-    console.log(lista)
-
     return (
         <div className="divContenedorCardProductos">
             {

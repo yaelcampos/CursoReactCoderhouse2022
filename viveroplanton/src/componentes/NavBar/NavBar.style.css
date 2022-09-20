@@ -3,7 +3,6 @@
     height: 15vh;
     width: 100vw;
     display: flex;
-    margin: 0.6%;
 }
 
 .navbar-imagen-contenedor {
@@ -27,7 +26,7 @@
   
 .nav-contenedor {
     color: #fff;
-    background-color: #76D704;
+    background-color: #76D704 !important;
     text-decoration: none;
     box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
     padding: 5%;
@@ -40,7 +39,13 @@
     justify-content: space-around;
 }
 
-.imageTulipanes {
+.imageHojas {
     width: 100vw;
     height: 45vh;
+    padding: 0.5%;
+    border-radius: 20px;
+}
+
+.nav-contenedor {
+    width: 30%;
 }

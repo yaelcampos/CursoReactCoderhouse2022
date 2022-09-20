@@ -1,26 +1,25 @@
 .DivContenedorBotones {
+    width: 45%;
+    height: 59px;
     display: flex;
-    width: 100%;
-    height: 15%;
-    flex-direction: column;
-    align-items: center;
-    border-top:2px solid #60833C;
-    background-color: 77A24A;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.DivContenedorBotones > button {
-    background-color: #60833C;
-    color: #fff;
-    width: 18%;
-    padding: 1%;
-    margin: 3%;
-    
-}
-
-.DivContenedorBotones > h3 {
-    font-size: 1rem;
+.ContenedorBotones {
+    display: flex;
 }
 
 button {
-    background-color: #355B0E;
+    font-size: 1rem;
+    width: 35px;
+
+}
+
+.btnAñadir {
+    width: 45%;
+    font-size: 1rem;
+    align-items: center;
+    background-color:  #59911a;
+    color: #fff;
 }
