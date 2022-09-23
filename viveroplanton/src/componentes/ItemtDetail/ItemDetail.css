@@ -17,3 +17,11 @@
 .itemDetail > h1 {
     font-size: 1rem;
 }
+
+.btnAñadir {
+    width: 45%;
+    font-size: 1rem;
+    align-items: center;
+    background-color:  #59911a;
+    color: #fff;
+}
