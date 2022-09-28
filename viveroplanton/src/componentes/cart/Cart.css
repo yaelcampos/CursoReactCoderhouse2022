@@ -1,0 +1,12 @@
+.contenedorCarrito {
+    border: 2px solid black;
+}
+
+.imagenCarrito {
+    width: 20%;
+}
+
+.removeItem {
+    width: 10%;
+    background-color: #59911a;
+}

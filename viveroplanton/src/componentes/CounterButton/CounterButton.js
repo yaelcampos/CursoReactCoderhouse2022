@@ -1,8 +1,8 @@
 import "./style.css"
 
-const Counter = (props, stock , setStock) => {
+const Counter = ({stockProductos, stock , setStock}) => {
 
-    const sumar = () => stock <= props.stockProductos -1 ? setStock(stock + 1) : alert("Alcanzaste el maximo de stock") 
+    const sumar = () => stock <= stockProductos -1 ? setStock(stock + 1) : alert("Alcanzaste el maximo de stock") 
     const restar = () => stock > 0 ? setStock(stock - 1) : alert("Te quedaste sin stock ") 
         
 return (

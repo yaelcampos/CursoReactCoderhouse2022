@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import './ItemDetailContainer.css';
 import productos from "../mockData";
 import ItemDetail from "../ItemtDetail/ItemDetail";
@@ -24,6 +24,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
+            <Link to= "/cart">Carrito</Link>
             <ItemDetail item={product} 
             />
         </div>

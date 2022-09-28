@@ -1,10 +1,10 @@
 import "./ItemDetail.css";
 import Counter from "../CounterButton/CounterButton";
 import { useContext, useState } from "react";
-import { cartContext } from "../../context/cartContext";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ( { item }) => {
-    const { addToCart } = useContext(cartContext);
+    const { addToCart } = useContext(CartContext);
     const [stock, setStock] = useState(1)
 
    function onAdd(item) {
@@ -21,10 +21,10 @@ const ItemDetail = ( { item }) => {
                 <h1>{item.description}</h1>
                 <h1>${item.price}</h1>
                 <Counter stockProductos={item.stock}  stock={stock}  setStock={setStock}/>
+                <button className="btnAñadir" onClick={() => onAdd(item)}>
+                    <strong>Añadir al carrito</strong>
+                </button>
             </div>
-            <button className="btnAñadir" onClick={() => onAdd(item)}>
-                <strong>Añadir al carrito</strong>
-            </button>
         </div>
     );
 };

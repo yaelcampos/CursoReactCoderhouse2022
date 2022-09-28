@@ -19,7 +19,11 @@
 }
 
 .btnAñadir {
-    width: 45%;
+    height: 7%;
+    position: absolute;
+    top: 133%;
+    width: 11%;
+    right: 19%;
     font-size: 1rem;
     align-items: center;
     background-color:  #59911a;
