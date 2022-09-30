@@ -1,29 +1,26 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import productos from "../mockData";
 import ItemList from "../ItemList/ItemList";
+import { getFirestore, getDocs, collection} from "firebase/firestore";
 
 const ItemListContainer = () => {
     const { id } = useParams();
     const [productList, setProductList] = useState([])
-    useEffect(() => {
-        getProducts.then((response) => {
-            setProductList(response);
-        });
+ 
+   
 
-    }, []);
     
 
-    const getProducts = new Promise((resolve, reject) => {
-            setTimeout(()=> {
-                console.log(id)
-                if (id != undefined) {
-                    console.log("hola charo")
-                    resolve(productos.filter((item) => item.categoria == id))
-                }
-            resolve(productos)
-            },2000)
-        })
+    const getProducts = () => {
+            const db = getFirestore();
+            const querySnapshot = collection(db, 'items');
+            getDocs(querySnapshot).then((response) => {
+                const data = response.docs.map((doc) => {
+                    return doc.data();
+                });
+            });
+            
+        }
     
     return (
         <>

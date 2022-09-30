@@ -3,6 +3,7 @@ import Counter from "../CounterButton/CounterButton";
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 
+
 const ItemDetail = ( { item }) => {
     const { addToCart } = useContext(CartContext);
     const [stock, setStock] = useState(1)

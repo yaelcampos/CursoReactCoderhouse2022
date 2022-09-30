@@ -1,7 +1,7 @@
 
 import { CartContext } from "./CartContext";
 import { useState } from "react";
-import productos from "../componentes/mockData";
+
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
@@ -23,21 +23,19 @@ export const CartProvider = ({ children }) => {
     }
 
     const removeItem = (productId) => {
-      let index = cart.findIndex((item) => item.id === productId);
-      let nuevoArreglo = [];
-        cart.forEach(product => {
-            if (product.id === productId) {
-                nuevoArreglo.push()
-            } else {
-                nuevoArreglo.push()
-            }
-        })
-       setCart(nuevoArreglo);
-      };
+        let index = cart.findIndex((item) => item.id === productId);
+        let nuevoArreglo = [];
+            cart.forEach(product => {
+                if (product.id === productId) {
+                    nuevoArreglo.push()
+                } 
+            });
+    setCart(nuevoArreglo);
+    };
 
     return (
         <CartContext.Provider value={{ cart, addToCart , removeItem }}> 
-            { children}
+            { children }
         </CartContext.Provider>
     )
 }
