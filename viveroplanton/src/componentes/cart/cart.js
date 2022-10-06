@@ -4,7 +4,8 @@ import { CartContext } from "../../context/CartContext";
 import {Link} from 'react-router-dom';
 
 const Cart = () => {
-        const { cart, addToCart, removeItem } = useContext(CartContext);
+        const { cart, removeItem } = useContext(CartContext);
+        const rutaInicial = '../image';
 
     return (
         <div className="contenedorCarrito">

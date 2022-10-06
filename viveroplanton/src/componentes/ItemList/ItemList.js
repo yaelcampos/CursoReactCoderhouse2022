@@ -3,6 +3,7 @@ import './ItemList.css';
 import { Link } from 'react-router-dom'
 
 const ItemList = ({ lista }) => {
+    const rutaInicial = '../image';
     return (
         <div className="divContenedorCardProductos">
             {

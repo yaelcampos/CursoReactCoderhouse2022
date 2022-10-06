@@ -19,10 +19,10 @@ const NavBar = () => {
                     <Link className="nav-link" to={'/'}> 
                         Inicio
                     </Link>
-                    <Link className="nav-link"  to={'/categoria/1'}>     
+                    <Link className="nav-link"  to={'/categoria/Plantas'}>     
                         Plantas
                     </Link>
-                    <Link className="nav-link"  to={'/categoria/2'}> 
+                    <Link className="nav-link"  to={'/categoria/Arboles'}> 
                         Arboles
                     </Link>
                     <Link  className="nav-link"  to={'/Servicios'}> 

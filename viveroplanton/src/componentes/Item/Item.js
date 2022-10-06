@@ -1,13 +1,13 @@
 import "./item.css"
-import productos from "../mockData";
 
+const rutaInicial = '../image';
 
-const Item = ({title, price, image, stock}) => {
+const Item = ({ title, price, image }) => {
     return (
     <div>
         <div className="divCardProductos">
             <h2>{title}</h2>
-            <img width={'200px'} src={image} alt={title}/>
+            <img width={'200px'} src={rutaInicial + image} alt={title}/>
             <h3>Precio:{price}</h3>
         </div>
         

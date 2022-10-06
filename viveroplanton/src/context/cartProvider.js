@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
         if(isInCart(item.id)) {
             alert('ya esta en tu carrito');
         } else {
-            setCart([...cart, {...item,cantidad}])
+            setCart([...cart, {...item, cantidad}])
         }
     };
     const isInCart = (id) => {
@@ -23,7 +23,6 @@ export const CartProvider = ({ children }) => {
     }
 
     const removeItem = (productId) => {
-        let index = cart.findIndex((item) => item.id === productId);
         let nuevoArreglo = [];
             cart.forEach(product => {
                 if (product.id === productId) {

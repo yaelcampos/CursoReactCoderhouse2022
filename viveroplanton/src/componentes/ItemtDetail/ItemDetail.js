@@ -8,6 +8,7 @@ const ItemDetail = ( { item }) => {
     const { addToCart } = useContext(CartContext);
     const [stock, setStock] = useState(1)
 
+   const rutaInicial = '../image';
    function onAdd(item) {
         addToCart(item, stock)
    }
@@ -15,7 +16,7 @@ const ItemDetail = ( { item }) => {
     return ( 
         <div className="ContenedoritemDetail">
             <div className="itemDetailImg">
-                <img src={item.image}/>
+                <img src={rutaInicial + item.image}/>
             </div>
             <div className="itemDetail">
                 <h1>{item.title}</h1>
