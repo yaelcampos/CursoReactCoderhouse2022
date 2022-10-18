@@ -1,12 +1,14 @@
 import './style.css';
 import carrito from '../../carrito.png';
-import Cart from '../Cart/Cart';
+import { CartContext } from "../../context/CartContext";
+import { useContext } from 'react';
 
 const CartWidget = () => {
+    const { cart } = useContext(CartContext)
     return (
         <>
-            <img src={carrito} alt="logo" />
-            {Cart.length !== 0 ? <h6>{Cart.length}</h6>: ""}
+            <img className="carritoDeCompra" src={carrito} alt="logo" />
+            <span>{cart.length}</span>
         </>
         )
     }

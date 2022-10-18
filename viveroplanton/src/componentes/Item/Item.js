@@ -1,6 +1,6 @@
 import "./item.css"
 
-const rutaInicial = '../image';
+const rutaInicial = '../img/';
 
 const Item = ({ title, price, image }) => {
     return (

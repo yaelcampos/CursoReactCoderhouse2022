@@ -1,12 +1,13 @@
 import logo from '../../plantago.png';
+import tarjetas  from '../../tarjetas.jpeg';
 import hojasMojadas from '../../hojas_mojadas.jpeg';
 import './NavBar.style.css';
-import Servicios from '../Servicios/Servicios';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
+    <header>
         <nav>
             <div>
                 <img className="imageHojas" src={hojasMojadas} alt="logo" />
@@ -19,23 +20,23 @@ const NavBar = () => {
                     <Link className="nav-link" to={'/'}> 
                         Inicio
                     </Link>
-                    <Link className="nav-link"  to={'/categoria/Plantas'}>     
+                    <Link className="nav-link"  to={'/categoria/plantas'}>     
                         Plantas
                     </Link>
-                    <Link className="nav-link"  to={'/categoria/Arboles'}> 
+                    <Link className="nav-link"  to={'/categoria/arboles'}> 
                         Arboles
-                    </Link>
-                    <Link  className="nav-link"  to={'/Servicios'}> 
-                        Servicios
                     </Link>
                 </div>
                 <div className="navbar-navegador-contenedor">
-                    <button className="nav-contenedor">Contactos</button>
                     <CartWidget/>
                 </div>
             </div> 
         </nav>
-        
+        <div className='parrafoDescuento'>
+            <p>15% DE DESCUENTO EN PLANTAS PAGANDO EN EFECTIVO. 3 CUOTAS SIN INTERES CON TARJETA. ENVIO GRATIS EN COMPRAS SUPERIORES A $7900, DENTRO DE CABA.</p>
+            <img src={tarjetas} alt="logo" />
+        </div>
+    </header>    
     );
 };
 

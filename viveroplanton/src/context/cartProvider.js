@@ -3,18 +3,20 @@ import { CartContext } from "./CartContext";
 import { useState } from "react";
 
 
-export const CartProvider = ({ children }) => {
+export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
-
-    const addToCart = (item, cantidad) => {
-        console.log(item)
-        console.log(cantidad)
-        if(isInCart(item.id)) {
-            alert('ya esta en tu carrito');
-        } else {
-            setCart([...cart, {...item, cantidad}])
+    // Con este state calculo la cantidad de productos que se muestran en el span del CartWidget
+    const [totalItemsState, setTotalItemsState] = useState(0);
+    const addToCart = (item , cantidad) => {
+        const itemInCart = isInCart(item.id)
+        setTotalItemsState(totalItemsState + cantidad);
+        if (itemInCart) {
+            itemInCart.cantidad = itemInCart.cantidad += cantidad;            
+        }else {
+            setCart([...cart, {...item, cantidad}]);
         }
     };
+    
     const isInCart = (id) => {
         return cart.some((item)=>  item.id === id);
     };

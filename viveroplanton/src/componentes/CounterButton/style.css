@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    top: -2%;
+    position: relative;
+    left: 7%;
 }
 
 .ContenedorBotones {

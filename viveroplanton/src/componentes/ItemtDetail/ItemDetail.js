@@ -12,24 +12,25 @@ const ItemDetail = ( { item }) => {
    function onAdd(item) {
         addToCart(item, stock)
    }
+   const rutaInicial = '../img/';
 
     return ( 
         <div className="ContenedoritemDetail">
             <div className="itemDetailImg">
-                <img src={'../../../public/img' + item.img}/>
+                <img src={rutaInicial + item.image}/>
             </div>
             <div className="itemDetail">
                 <h1>{item.title}</h1>
                 <h1>{item.description}</h1>
                 <h1>${item.price}</h1>
                 <Counter stockProductos={item.stock}  stock={stock}  setStock={setStock}/>
-                <div>
-                    <button className="btnAñadir" onClick={() => onAdd(item)}>
+                <div className="contenedorBotones">
+                    <button className="AgregarCarrito"  onClick={() => onAdd(item)}>
                     <strong>Añadir al carrito</strong>
+                    <Link to={'/cart/'} ><button  className="btnCarrito"  >Ir al carrito</button></Link>
                     </button>
-                    <Link to={'/productos'}><button className="btnCarrito" >Seguir Comprando</button></Link>
-                    <Link to={'/cart/'} ><button  className="btnCarrito"  >Ir a pagar</button></Link>
                 </div>
+                <Link className="volver" to={"/"}>Volver</Link>
             </div>
         </div>
     );
