@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/CursoReactCoderhouse2022/static/css/main.dbf0c4b9.css",
+    "main.js": "/CursoReactCoderhouse2022/static/js/main.bfc86c2d.js",
+    "static/js/787.f70d06e4.chunk.js": "/CursoReactCoderhouse2022/static/js/787.f70d06e4.chunk.js",
+    "static/media/plantago.png": "/CursoReactCoderhouse2022/static/media/plantago.1004e414e4fcbd41b2ac.png",
+    "static/media/hojas_mojadas.jpeg": "/CursoReactCoderhouse2022/static/media/hojas_mojadas.069e4b1300ba19847d9d.jpeg",
+    "static/media/pedidoCompletado.JPG": "/CursoReactCoderhouse2022/static/media/pedidoCompletado.df8cf0998ccc257d236f.JPG",
+    "static/media/carrito.png": "/CursoReactCoderhouse2022/static/media/carrito.5d4d3d22e753fe9fa264.png",
+    "static/media/carritoVacio.jpg": "/CursoReactCoderhouse2022/static/media/carritoVacio.eb7af49063671dc82070.jpg",
+    "static/media/tarjetas.jpeg": "/CursoReactCoderhouse2022/static/media/tarjetas.17571376b8fd0519bf54.jpeg",
+    "index.html": "/CursoReactCoderhouse2022/index.html",
+    "main.dbf0c4b9.css.map": "/CursoReactCoderhouse2022/static/css/main.dbf0c4b9.css.map",
+    "main.bfc86c2d.js.map": "/CursoReactCoderhouse2022/static/js/main.bfc86c2d.js.map",
+    "787.f70d06e4.chunk.js.map": "/CursoReactCoderhouse2022/static/js/787.f70d06e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbf0c4b9.css",
+    "static/js/main.bfc86c2d.js"
+  ]
+}
